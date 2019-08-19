@@ -1,0 +1,50 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__logo {
+    width: 140px;
+  }
+
+  &__menu {
+    display: flex;
+    
+    li {
+      margin: 0 15px;
+    }
+
+    a {
+      color: $black;
+    }
+  }
+  &__akk {
+    display: flex;
+    float: right;
+    p {
+      margin: 0;
+      font-size: 12px;
+      text-align: right;
+    }
+  }
+  &__photo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .page__container {
+    display: flex;
+  }
+}
+
+.logo__col {
+  @include make-col(3);
+}
+
+.menu__col {
+  @include make-col(6);
+}
+
+.akk__col {
+  @include make-col(3);
+}

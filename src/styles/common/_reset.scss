@@ -1,0 +1,59 @@
+/* stylelint-disable */
+::placeholder {
+  color: #666
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  font-family: $default-font;
+  font-weight: 400;
+}
+input, textarea {
+  border:
+          #666 1px solid;
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red
+  }
+
+  &:required:valid {
+    border-color: green
+  }
+}
+
+.page__container {
+  @include make-container();
+  @include make-container-max-widths();
+}
+
+.default_font {
+  font-family: $default-font;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.title {
+  font-family: $title-font;
+  font-weight: 600;
+  font-size: 42px;
+  text-align: center;
+  margin: 0 auto;
+}
+

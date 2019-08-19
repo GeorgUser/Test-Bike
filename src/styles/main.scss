@@ -1,0 +1,15 @@
+@import "common/variables";
+@import "./autoload/fonts";
+@import "./autoload/bootstrap";
+
+// css reset & mi style
+@import "common/reset";
+
+// main style
+@import "layouts/header";
+@import "layouts/hero_block";
+
+@import "layouts/footer";
+
+// media
+@import "common/media"; // Always at the end
