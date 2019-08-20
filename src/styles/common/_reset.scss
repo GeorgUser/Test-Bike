@@ -43,17 +43,3 @@ input, textarea {
   @include make-container-max-widths();
 }
 
-.default_font {
-  font-family: $default-font;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.title {
-  font-family: $title-font;
-  font-weight: 600;
-  font-size: 42px;
-  text-align: center;
-  margin: 0 auto;
-}
-
