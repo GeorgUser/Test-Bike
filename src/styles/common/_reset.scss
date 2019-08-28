@@ -1,6 +1,6 @@
 /* stylelint-disable */
 ::placeholder {
-  color: #666
+  color: $orange
 }
 
 html, body {
@@ -24,6 +24,7 @@ body {
   position: relative;
   font-family: $default-font;
   font-weight: 400;
+  color: $white;
 }
 input, textarea {
   border:
@@ -41,5 +42,9 @@ input, textarea {
 .page__container {
   @include make-container();
   @include make-container-max-widths();
+}
+
+.page__row {
+  @include make-row();
 }
 

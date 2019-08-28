@@ -1,0 +1,41 @@
+.advantages {
+  text-align: center;
+  background-color: $dark-blue;
+  padding: 50px 0;
+  .advantage {
+    text-align: left;
+    display: flex;
+    padding: 30px;
+    .icon {
+      margin-right: 30px;
+    }
+    .title {
+      text-align: left;
+      font-size: 23px;
+    }
+    &__col {
+      @include make-col(6);
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .advantages {
+    padding: 20px 15px;
+    .advantage {
+      text-align: center;
+      display: block;
+      padding: 0;
+      .icon {
+        margin: 20px 0;
+      }
+      .title {
+        text-align: center;
+        font-size: 20px;
+      }
+      &__col {
+        @include make-col(12);
+      }
+    }
+  }
+}

@@ -8,42 +8,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="og:image" content="path/to/image.jpg">
     <meta name="theme-color" content="#000">
-    <!--<link rel="icon" href="images/mainicon.jpg">-->
+    <link rel="icon" href="images/icon1.jpg">
     <link rel="apple-touch-icon" sizes="180x180" href="#">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
+          rel="stylesheet">
 
 </head>
 <body>
-<header id="header" class="header">
-    <div class="page__container">
-        <div class="logo__col">
+<header id="header" class="header sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-dark">
+        <a class="navbar-brand" href="#">
             <div class="logo">
                 <img src="images/logo.png" alt="logo" title="logo bike">
             </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Велосипеды
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="#">Горные велосипеды</a>
+                        <a class="dropdown-item" href="#">Женские велосипеды</a>
+                        <a class="dropdown-item" href="#">Фэтбайки</a>
+                        <a class="dropdown-item" href="#">Дорожные велосипеды</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Аксессуары
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#">Аксессуар 1</a>
+                        <a class="dropdown-item" href="#">Аксессуар 2</a>
+                        <a class="dropdown-item" href="#">Аксессуар 3</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Запчасти
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="#">Запчасть 1</a>
+                        <a class="dropdown-item" href="#">Запчасть 2</a>
+                        <a class="dropdown-item" href="#">Запчасть 3</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <div class="search">
+                    <input class="form-control" type="search" aria-label="Search">
+                    <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+            <div class="social__col">
+                <div class="social">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook-f fb"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram inst"></i></a>
+                    <a href="https://www.youtube.com">
+                        <div class="youtube">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<g><path id="YouTube" d="M782.5,726.8h-53.8l0.3-31.2c0-13.9,11.4-25.2,25.3-25.2h3.4c14,0,25.4,11.4,25.4,25.2L782.5,726.8z M580.7,659.9c-13.6,0-24.8,9.2-24.8,20.4v151.9c0,11.2,11.2,20.4,24.8,20.4c13.7,0,24.9-9.1,24.9-20.4V680.3C605.6,669,594.4,659.9,580.7,659.9z M908.3,574.9v289c0,69.3-60.1,126.1-133.6,126.1H225.3c-73.5,0-133.6-56.7-133.6-126.1v-289c0-69.3,60.1-126.1,133.6-126.1h549.4C848.2,448.8,908.3,505.6,908.3,574.9z M261.9,895.3l0-304.5l68.1,0v-45.1l-181.6-0.3v44.4l56.7,0.2v305.3H261.9z M466.1,636.2h-56.8v162.6c0,23.5,1.4,35.3-0.1,39.4c-4.6,12.6-25.4,26-33.5,1.4c-1.4-4.3-0.2-17.3-0.2-39.7l-0.2-163.7h-56.5l0.2,161.1c0,24.7-0.6,43.1,0.2,51.5c1.4,14.8,0.9,32,14.6,41.8c25.5,18.4,74.5-2.7,86.8-29.1l-0.1,33.6l45.6,0.1L466.1,636.2L466.1,636.2z M647.8,822.4l-0.1-135.3c0-51.6-38.6-82.5-91-40.7l0.2-100.6l-56.7,0.1l-0.3,347.2l46.6-0.7l4.2-21.6C610.4,925.5,647.9,888,647.8,822.4z M825.5,804.5l-42.6,0.2c0,1.7-0.1,3.6-0.1,5.8v23.8c0,12.7-10.5,23.1-23.3,23.1h-8.3c-12.8,0-23.3-10.4-23.3-23.1v-2.6v-26.1v-33.7h97.5V735c0-26.8-0.7-53.6-2.9-69c-7-48.5-75-56.2-109.4-31.4c-10.8,7.8-19,18.1-23.8,32.1c-4.8,13.9-7.2,33-7.2,57.2v80.7C682,938.8,844.9,919.8,825.5,804.5z M607.1,366.4c2.9,7.1,7.5,12.9,13.7,17.2c6.1,4.3,13.9,6.4,23.2,6.4c8.2,0,15.4-2.2,21.8-6.8c6.3-4.5,11.6-11.3,15.9-20.4l-1.1,22.3h63.3V116.1H694v209.5c0,11.3-9.3,20.6-20.8,20.6c-11.4,0-20.7-9.3-20.7-20.6V116.1h-52v181.6c0,23.1,0.4,38.5,1.1,46.4C602.4,351.7,604.1,359.2,607.1,366.4z M415.3,214.4c0-25.8,2.2-46,6.4-60.6c4.3-14.5,12.1-26.1,23.3-34.9c11.2-8.8,25.5-13.3,42.9-13.3c14.6,0,27.2,2.9,37.7,8.5c10.5,5.7,18.6,13,24.3,22.1c5.7,9.1,9.6,18.5,11.7,28c2.1,9.7,3.2,24.3,3.2,44.1v68.1c0,25-1,43.3-2.9,55c-1.9,11.7-6.1,22.5-12.5,32.7c-6.3,10.1-14.5,17.6-24.4,22.4c-10,4.8-21.4,7.2-34.3,7.2c-14.4,0-26.6-2-36.6-6.2c-10.1-4.1-17.8-10.4-23.3-18.7c-5.6-8.3-9.5-18.4-11.9-30.2c-2.4-11.8-3.5-29.5-3.5-53.1L415.3,214.4L415.3,214.4z M464.8,321.3c0,15.2,11.3,27.7,25.2,27.7c13.8,0,25.1-12.4,25.1-27.7V178c0-15.2-11.3-27.7-25.1-27.7c-13.8,0-25.2,12.4-25.2,27.7V321.3z M289.6,393.7h59.7l0.1-206.5L420,10.4h-65.3l-37.5,131.4L279.1,10h-64.6l75.1,177.3L289.6,393.7z"/></g>
+</svg>
+                        </div>
+                    </a>
+                </div>
+                <a class="phone" href="tel: +38 (063) 940 47 40">+38 (063) 940 47 40</a>
+            </div>
         </div>
-        <div class="menu__col">
-            <nav>
-                <ul class="menu">
-                    <li class="menu__item"><a href="">Велосипеды</a></li>
-                    <li class="menu__item"><a href="">Аксесуары</a></li>
-                    <li class="menu__item"><a href="">Запчасти</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    </nav>
 </header>
 <section id="hero_block" class="hero_block">
+    <div class="slick">
+        <div><img src="images/bg.jpg" alt="bg image gear"></div>
+        <div><img src="images/bg.jpg" alt="bg image gear"></div>
+        <div><img src="images/bg.jpg" alt="bg image gear"></div>
+        <div><img src="images/bg.jpg" alt="bg image gear"></div>
+        <div><img src="images/bg.jpg" alt="bg image gear"></div>
+    </div>
+</section>
+<section class="advantages">
     <div class="page__container">
+        <h2 class="title">Наши преимущества</h2>
+        <div class="page__row">
+            <div class="advantage__col">
+                <div class="advantage">
+                    <div class="icon">
+                        <img src="images/icon1.jpg" alt="support">
+                    </div>
+                    <div class="description">
+                        <h4 class="title">предпродажная сборка и настройка</h4>
+                        <p>Мы предоставляем услугу сборки,настройки и предпродажной подготовки перед тем как велосипед
+                            отправится на почту,это делается БЕСПЛАТНО. Бесплатная сборка и настройка не распостраняется
+                            на велосипеды</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantage__col">
+                <div class="advantage">
+                    <div class="icon">
+                        <img src="images/icon2.jpg" alt="support">
+                    </div>
+                    <div class="description">
+                        <h4 class="title">помощь в выборе</h4>
+                        <p>Имея большой опыт в вело продаже, мы поможем сделать правильный выбор,правильно подберем
+                            размер рамы, учтем все ваши пожелания. С 2014 года мы занимаемся продажей
+                            велосипедов,сами</p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantage__col">
+                <div class="advantage">
+                    <div class="icon">
+                        <img src="images/icon3.jpg" alt="support">
+                    </div>
+                    <div class="description">
+                        <h4 class="title">сборка и настройка</h4>
+                        <p>Мы знакомы с велосипедами не на теории,а на практике. На большинство велосипедов снимаем
+                            видео обзоры. На видео мы рассказываем о комплектации байка,где его лучше </p>
+                    </div>
+                </div>
+            </div>
+            <div class="advantage__col">
+                <div class="advantage">
+                    <div class="icon">
+                        <img src="images/icon4.jpg" alt="support">
+                    </div>
+                    <div class="description">
+                        <h4 class="title">видео обзоры</h4>
+                        <p>Мы знакомы с велосипедами не на теории,а на практике. На большинство велосипедов снимаем
+                            видео обзоры.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="page__container">
+        <h2 class="title">о нас</h2>
+        <div class="description">
+            <p>Каждый из всех людей хотя бы один раз в своей жизни пробовал прокатиться на велосипеде и наверняка на всю
+                жизнь запомнил непередаваемые эти ощущения счастья и равновесия.
+                История нашего интернет-магазина "Best-bike" началась в 2009 году. Мы заядлые любители велоспорта и как
+                только у нас появляется свободное время,мы едем на трассу здоровья
+                и наматываем там не один круг. А также участвуем во всех любительских вело соревнованиях. Мы и Вас
+                призываем приобщаться к велосипедной культуре,ведь в нашей стране она стремительно развивается.
+                Катаясь на велосипеде мы ведем здоровый образ жизни, тем самым продлевая здоровье себе и своим детям.
+                Мы продаем велосипеды самых разных производителей. У нас каждый найдет для себя велосипед, велосипедные
+                аксессуары, велосипедные запчасти,получит обширную и грамотною консультацию.</p>
+        </div>
 
+    </div>
+</section>
+
+<section class="consultation">
+    <div class="page__container">
+        <h2 class="title">нужна консультация?</h2>
+        <p class="sub-title">Оставьте свои данные и мы свяжемся с вами в ближайшее время</p>
+        <form action="#" method="post" class="form">
+            <input pattern="(?=.*\W).{3,}" required class="text" placeholder="Имя" type="text">
+            <input pattern="(?=.*\d).{6,}" required class="text" placeholder="Телефон" type="text">
+            <input class="btn" type="submit">
+        </form>
     </div>
 </section>
 
 
 <footer class="footer">
     <div class="page__container">
-        <div class="credits">
+        <div class="page__row">
+            <div class="logo__col">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" title="logo bike">
+                </div>
+            </div>
+            <div class="social__col">
+                <div class="social footer__social">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook-f fb"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram inst"></i></a>
+                    <a href="https://www.youtube.com">
+                        <div class="youtube">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata>
+<g><path id="YouTube" d="M782.5,726.8h-53.8l0.3-31.2c0-13.9,11.4-25.2,25.3-25.2h3.4c14,0,25.4,11.4,25.4,25.2L782.5,726.8z M580.7,659.9c-13.6,0-24.8,9.2-24.8,20.4v151.9c0,11.2,11.2,20.4,24.8,20.4c13.7,0,24.9-9.1,24.9-20.4V680.3C605.6,669,594.4,659.9,580.7,659.9z M908.3,574.9v289c0,69.3-60.1,126.1-133.6,126.1H225.3c-73.5,0-133.6-56.7-133.6-126.1v-289c0-69.3,60.1-126.1,133.6-126.1h549.4C848.2,448.8,908.3,505.6,908.3,574.9z M261.9,895.3l0-304.5l68.1,0v-45.1l-181.6-0.3v44.4l56.7,0.2v305.3H261.9z M466.1,636.2h-56.8v162.6c0,23.5,1.4,35.3-0.1,39.4c-4.6,12.6-25.4,26-33.5,1.4c-1.4-4.3-0.2-17.3-0.2-39.7l-0.2-163.7h-56.5l0.2,161.1c0,24.7-0.6,43.1,0.2,51.5c1.4,14.8,0.9,32,14.6,41.8c25.5,18.4,74.5-2.7,86.8-29.1l-0.1,33.6l45.6,0.1L466.1,636.2L466.1,636.2z M647.8,822.4l-0.1-135.3c0-51.6-38.6-82.5-91-40.7l0.2-100.6l-56.7,0.1l-0.3,347.2l46.6-0.7l4.2-21.6C610.4,925.5,647.9,888,647.8,822.4z M825.5,804.5l-42.6,0.2c0,1.7-0.1,3.6-0.1,5.8v23.8c0,12.7-10.5,23.1-23.3,23.1h-8.3c-12.8,0-23.3-10.4-23.3-23.1v-2.6v-26.1v-33.7h97.5V735c0-26.8-0.7-53.6-2.9-69c-7-48.5-75-56.2-109.4-31.4c-10.8,7.8-19,18.1-23.8,32.1c-4.8,13.9-7.2,33-7.2,57.2v80.7C682,938.8,844.9,919.8,825.5,804.5z M607.1,366.4c2.9,7.1,7.5,12.9,13.7,17.2c6.1,4.3,13.9,6.4,23.2,6.4c8.2,0,15.4-2.2,21.8-6.8c6.3-4.5,11.6-11.3,15.9-20.4l-1.1,22.3h63.3V116.1H694v209.5c0,11.3-9.3,20.6-20.8,20.6c-11.4,0-20.7-9.3-20.7-20.6V116.1h-52v181.6c0,23.1,0.4,38.5,1.1,46.4C602.4,351.7,604.1,359.2,607.1,366.4z M415.3,214.4c0-25.8,2.2-46,6.4-60.6c4.3-14.5,12.1-26.1,23.3-34.9c11.2-8.8,25.5-13.3,42.9-13.3c14.6,0,27.2,2.9,37.7,8.5c10.5,5.7,18.6,13,24.3,22.1c5.7,9.1,9.6,18.5,11.7,28c2.1,9.7,3.2,24.3,3.2,44.1v68.1c0,25-1,43.3-2.9,55c-1.9,11.7-6.1,22.5-12.5,32.7c-6.3,10.1-14.5,17.6-24.4,22.4c-10,4.8-21.4,7.2-34.3,7.2c-14.4,0-26.6-2-36.6-6.2c-10.1-4.1-17.8-10.4-23.3-18.7c-5.6-8.3-9.5-18.4-11.9-30.2c-2.4-11.8-3.5-29.5-3.5-53.1L415.3,214.4L415.3,214.4z M464.8,321.3c0,15.2,11.3,27.7,25.2,27.7c13.8,0,25.1-12.4,25.1-27.7V178c0-15.2-11.3-27.7-25.1-27.7c-13.8,0-25.2,12.4-25.2,27.7V321.3z M289.6,393.7h59.7l0.1-206.5L420,10.4h-65.3l-37.5,131.4L279.1,10h-64.6l75.1,177.3L289.6,393.7z"/></g>
+</svg>
+                        </div>
+                    </a>
+                    <p class="copyright">Bike Sport 2011-2018</p>
+                </div>
+            </div>
+            <div class="nav__col">
+                <div class="nav">
+                    <div class="block">
+                        <p>горные</p>
+                        <p>дорожные</p>
+                    </div>
+                    <div class="block">
+                        <p>фэтбайки</p>
+                        <p>женские</p>
+                    </div>
+                    <div class="contact">
+                        <p><a href="tel: +38 (063) 940 47 40">+38 (063) 940 47 40</a></p>
+                        <p>с 9.00 до 21.00 без выходных</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 </body>
 </html>

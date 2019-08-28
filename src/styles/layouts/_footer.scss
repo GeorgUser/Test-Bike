@@ -1,0 +1,97 @@
+.footer {
+  background-color: $dark-blue;
+  padding: 20px 0;
+  font-size: 14px;
+  .logo {
+    padding-top: 12px;
+    &__col {
+      @include make-col(3);
+    }
+  }
+  &__social {
+    text-align: left;
+    font-size: 20px;
+    i {
+      color: $white;
+      &:hover {
+        color: $orange;
+        cursor: pointer;
+      }
+    }
+    .youtube {
+      fill: $white;
+      &:hover {
+        fill: $orange;
+        cursor: pointer;
+      }
+    }
+    &__col {
+      @include make-col(3);
+    }
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    .block {
+      text-transform: uppercase;
+      font-size: 16px;
+      p:hover {
+        color: $orange;
+        cursor: pointer;
+      }
+    }
+    .contact {
+      line-height: 1.7em;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+    &__col {
+      @include make-col(6);
+    }
+  }
+  .copyright {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .footer {
+    padding: 20px 20px;
+    font-size: 14px;
+    .logo {
+      &__col {
+        @include make-col(6);
+      }
+    }
+    &__social {
+      text-align: right;
+    }
+    .social {
+      &__col {
+        @include make-col(6);
+      }
+    }
+    .nav {
+      &__col {
+        @include make-col(12);
+      }
+    }
+    .copyright {
+      margin-top: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .block {
+    width: 50%;
+    text-align: center;
+  }
+  .contact {
+    text-align: center;
+  }
+}
+

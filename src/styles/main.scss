@@ -1,12 +1,18 @@
 @import "common/variables";
 @import "./autoload/bootstrap";
+@import "./autoload/fontawesome";
+@import "./autoload/slick";
 
 // css reset & mi style
 @import "common/reset";
+@import "common/global";
 
 // main style
 @import "layouts/header";
 @import "layouts/hero_block";
+@import "layouts/advantages";
+@import "layouts/consultation";
+@import "layouts/about";
 
 @import "layouts/footer";
 

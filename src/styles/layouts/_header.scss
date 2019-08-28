@@ -1,3 +1,96 @@
 .header {
+  background-color: $dark-blue;
+  vertical-align: center;
+  padding: 10px 0;
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: $orange;
+      background-color: $dark-blue;
+    }
+  }
+  i {
+    color: $orange;
+    &:hover {
+      color: $white;
+    }
+  }
+  .dropdown-menu {
+    background-color: $dark-blue;
+    border: none;
+  }
+  .dropdown-toggle {
+    margin: 0 10px;
+  }
+  .search {
+    display: flex;
+    .btn {
+      width: max-content;
+      margin: 0 !important;
+    }
+    input {
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      border-bottom: 1px solid $white;
+      color: $white;
+      background-color: $dark-blue;
+    }
+    button {
+      padding: 0;
+    }
+    i {
+      font-size: 25px;
+      margin-top: 12px;
+    }
+    &__col {
+      @include make-col(3);
+    }
+  }
+  .phone {
+    float: right;
+    font-size: 14px;
+  }
+}
 
+.social {
+  text-align: right;
+  i {
+    color: $orange;
+    text-decoration: none;
+    &:hover {
+      color: $white;
+      cursor: pointer;
+    }
+  }
+  .inst {
+    font-size: 19px;
+    margin: 0 5px;
+  }
+  .youtube {
+    width: 17px;
+    fill: $orange;
+    display: inline-block;
+    svg {
+      padding-bottom: 5px;
+    }
+    &:hover {
+      fill: $white;
+      cursor: pointer;
+    }
+  }
+  &__col {
+    @include make-col(2);
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .social__col {
+    margin-top: 10px;
+    @include make-col(12);
+  }
+  .social, .phone {
+    text-align: left;
+  }
 }
