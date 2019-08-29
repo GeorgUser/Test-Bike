@@ -19,9 +19,11 @@
   .dropdown-menu {
     background-color: $dark-blue;
     border: none;
+    font-size: 14px;
   }
   .dropdown-toggle {
     margin: 0 10px;
+    font-weight: 500;
   }
   .search {
     display: flex;

@@ -1,4 +1,25 @@
 /* stylelint-disable */
+.page__container {
+  @include make-container();
+  @include make-container-max-widths();
+}
+
+.page__row {
+  @include make-row();
+}
+
+body {
+  font-size: 16px;
+  font-family: $default-font;
+  font-weight: 400;
+  color: $white;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
 .title {
   text-align: center;
   margin: 0 auto;
