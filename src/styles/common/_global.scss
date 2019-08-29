@@ -13,15 +13,19 @@ body {
   font-family: $default-font;
   font-weight: 400;
   color: $white;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 35px;
+  letter-spacing: 0.8px;
 }
 
 .title {
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+@include media-breakpoint-down(sm) {
+  .title {
+    font-size: 25px;
+  }
 }

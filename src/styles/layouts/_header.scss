@@ -1,7 +1,7 @@
 .header {
   background-color: $dark-blue;
   vertical-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
   a {
     color: $white;
     text-decoration: none;
@@ -16,14 +16,20 @@
       color: $white;
     }
   }
+  .navbar-nav {
+    margin-left: 57px;
+    li:nth-child(2n) {
+      margin: 0 26px;
+    }
+  }
   .dropdown-menu {
     background-color: $dark-blue;
     border: none;
     font-size: 14px;
   }
   .dropdown-toggle {
-    margin: 0 10px;
     font-weight: 500;
+    text-transform: uppercase;
   }
   .search {
     display: flex;
@@ -67,11 +73,14 @@
     }
   }
   .inst {
-    font-size: 19px;
+    font-size: 25px;
     margin: 0 5px;
   }
+  .fb {
+    font-size: 24px;
+  }
   .youtube {
-    width: 17px;
+    width: 25px;
     fill: $orange;
     display: inline-block;
     svg {
@@ -88,11 +97,19 @@
 }
 
 @include media-breakpoint-down(lg) {
-  .social__col {
-    margin-top: 10px;
-    @include make-col(12);
-  }
-  .social, .phone {
-    text-align: left;
+  .header {
+    .social__col {
+      margin-top: 10px;
+      @include make-col(12);
+    }
+    .social, .phone {
+      text-align: left;
+    }
+    .navbar-nav {
+      margin-left: 0;
+      li:nth-child(2n) {
+        margin: 10px 0;
+      }
+    }
   }
 }

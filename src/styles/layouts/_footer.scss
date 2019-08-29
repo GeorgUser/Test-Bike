@@ -1,9 +1,14 @@
 .footer {
   background-color: $dark-blue;
-  padding: 20px 0;
+  padding: 24px 0;
   font-size: 14px;
+  vertical-align: bottom;
   .logo {
-    padding-top: 12px;
+    margin-top: 16px;
+    margin-left: 32px;
+    img {
+      width: 60%;
+    }
     &__col {
       @include make-col(3);
     }
@@ -11,6 +16,7 @@
   &__social {
     text-align: left;
     font-size: 20px;
+    margin-top: 10px;
     i {
       color: $white;
       &:hover {
@@ -31,7 +37,8 @@
   }
   .nav {
     display: flex;
-    justify-content: space-around;
+    margin-top: 16px;
+    justify-content: space-evenly;
     .block {
       text-transform: uppercase;
       font-size: 16px;
@@ -87,12 +94,24 @@
 }
 
 @include media-breakpoint-down(sm) {
-  .block {
-    width: 50%;
-    text-align: center;
-  }
-  .contact {
-    text-align: center;
+  .footer {
+    .block {
+      width: 50%;
+      text-align: center;
+    }
+    .copyright {
+      font-size: 12px;
+    }
+    .contact {
+      text-align: center;
+    }
+    .logo {
+      margin: 0;
+      img {
+        padding-top: 14px;
+        width: 100%;
+      }
+    }
   }
 }
 
