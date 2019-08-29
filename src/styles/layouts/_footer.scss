@@ -43,10 +43,15 @@
       text-transform: uppercase;
       font-size: 16px;
       font-weight: 500;
-      p:hover {
-        color: $orange;
-        cursor: pointer;
+      a {
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          color: $orange;
+          cursor: pointer;
+        }
       }
+
     }
     .contact {
       line-height: 1.7em;
@@ -76,13 +81,18 @@
     }
     &__social {
       text-align: right;
+      p {
+        margin-bottom: 0;
+      }
     }
     .social {
       &__col {
         @include make-col(6);
+        align-self: flex-end;
       }
     }
     .nav {
+      margin-top: 40px;
       &__col {
         @include make-col(12);
       }

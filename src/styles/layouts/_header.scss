@@ -27,6 +27,10 @@
     border: none;
     font-size: 14px;
   }
+  .form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }
   .dropdown-toggle {
     font-weight: 500;
     text-transform: uppercase;
@@ -36,6 +40,10 @@
     .btn {
       width: max-content;
       margin: 0 !important;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
     }
     input {
       border: none;
@@ -73,16 +81,18 @@
     }
   }
   .inst {
-    font-size: 25px;
+    font-size: 27px;
     margin: 0 5px;
   }
   .fb {
-    font-size: 24px;
+    font-size: 25px;
   }
   .youtube {
-    width: 25px;
+    width: 27px;
+    vertical-align: top;
     fill: $orange;
     display: inline-block;
+    padding-bottom: 3px;
     svg {
       padding-bottom: 5px;
     }

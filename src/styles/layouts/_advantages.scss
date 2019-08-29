@@ -1,17 +1,26 @@
 .advantages {
   text-align: center;
   background-color: $dark-blue;
-  padding: 50px 0;
+  padding: 74px 0 18px 0;
+  .content {
+    margin-top: 46px;
+    padding: 30px;
+  }
   .advantage {
     text-align: left;
     display: flex;
-    padding: 30px;
+    margin-bottom: 16px;
     .icon {
-      margin-right: 30px;
+      margin-right: 34px;
     }
     .title {
       text-align: left;
       font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .title-22{
+      font-size: 22px;
     }
     &__col {
       @include make-col(6);
@@ -21,7 +30,11 @@
 
 @include media-breakpoint-down(md) {
   .advantages {
-    padding: 20px 15px;
+    padding: 50px 0;
+    .content {
+      margin-top: 20px;
+      padding: 0 20px;
+    }
     .advantage {
       text-align: center;
       display: block;
